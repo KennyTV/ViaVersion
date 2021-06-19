@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "id": "viaversion",
   "name": "ViaVersion",
-  "version": "${project.version}",
-  "description": "${project.description}",
-  "license": "MIT",
+  "version": "${version}",
+  "description": "${description}",
+  "license": "GPL-3.0",
   "contact": {
     "homepage": "https://viaversion.com/",
     "issues": "https://github.com/ViaVersion/ViaVersion/issues",
@@ -23,9 +23,13 @@
     "fabricloader": ">=0.4.0"
   },
   "recommends": {
-    "viafabric": ">=0.2.0-SNAPSHOT"
+    "viafabric": ">=0.3.99"
   },
   "custom": {
-    "modmenu:api": true
+    "modmenu:api": true,
+    "modmenu": {
+      "badges": [ "library" ],
+      "parent": "viafabric"
+    }
   }
 }
